@@ -14,8 +14,10 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 export HISTCONTROL=ignoreboth:erasedups
-export GOPATH=~/code/go
 export EDITOR=nano
+export GOPATH=~/code/go
+export GOROOT=/usr/local/Cellar/go/1.11.1/libexec
+export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f ~/code/google-cloud-sdk/path.zsh.inc ]; then
